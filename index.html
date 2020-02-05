@@ -13,14 +13,38 @@
             Time
         </div>
         <div class="clock-photo">
-            Photo will be here
+            <img id="coolimages" border=10px>
+            <blockquote>Hello World!</blockquote>
         </div>
         <div class="clock-alarm">
-            interval
+            Concentrate for&nbsp; 
+            <select id="concentrate-minute">
+                <option value="10">10</option>
+                <option value="20" selected>20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+                <option value="60">60</option>
+            </select>
+            &nbsp;minute
+            <br>
+            Break for&nbsp;
+            <select id="break-minute">
+                <option value="10" selected>10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+                <option value="60">60</option>
+            </select>
+            &nbsp;minute
+            <br>
+            <button id="startButton">!Concentrate Start!</button>
         </div>
 
 
         <script src="clock-time.js"></script>
         <script src="clock-photo.js"></script>
+        <script src="clock-alarm.js"></script>
     </body>
 </html>
