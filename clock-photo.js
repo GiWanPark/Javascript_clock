@@ -19,13 +19,17 @@ function changeImage()
             break;
     }
     
-    photo_area.src = photos[nextImageIndex];
-
+    photo_area.className += "fadeOut";
+    setTimeout(function(){
+        photo_area.src = photos[nextImageIndex];
+        photo_area.className = "";
+    }, 1000);
 }
 
 function init()
 {
-    changeImage();
+    currentImageIndex = nextImageIndex = Math.floor( Math.random() * 10 );
+    photo_area.src = photos[nextImageIndex];
     setInterval(changeImage, imageChangingInterval);
 }
 
